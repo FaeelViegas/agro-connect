@@ -135,6 +135,7 @@ html {
     .container-provider .info .avaliacoes {
         margin-right: 50px;
     }
+
     .navbar nav .contato {
         background-color: rgb(255, 255, 255);
         align-content: center;
@@ -142,6 +143,7 @@ html {
         height: 40px;
 
     }
+
     .navbar nav .sobre {
         background-color: rgb(255, 255, 255);
         align-content: center;
@@ -149,12 +151,14 @@ html {
         height: 40px;
 
     }
+
     .navbar nav .avaliacoes {
         background-color: rgb(7, 46, 9);
         align-content: center;
         border-radius: 20px;
         height: 40px;
     }
+
     .navbar nav {
         display: flex;
         justify-content: center;
@@ -261,6 +265,49 @@ html {
 
     .logo-menu button i {
         font-size: 25px;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 200px;
+        color: rgb(81, 81, 81);
+    }
+
+    .footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer ul li {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer h6 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #text-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+    }
+
+    #perfil-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        object-fit: cover;
+        width: 300px;
     }
 }
 
@@ -408,6 +455,7 @@ html {
     .avaliacao {
         display: flex;
         justify-content: center;
+        margin-bottom: 70px;
     }
 
     .container-avaliacao {
@@ -441,5 +489,48 @@ html {
 
     #container-menu {
         display: none;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 200px;
+        color: rgb(81, 81, 81);
+    }
+
+    .footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer ul li {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer h6 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #text-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+    }
+
+    #perfil-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        object-fit: cover;
+        width: 300px;
     }
 }

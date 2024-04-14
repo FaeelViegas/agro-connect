@@ -226,6 +226,49 @@ html {
     .logo-menu button i {
         font-size: 25px;
     }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 200px;
+        color: rgb(81, 81, 81);
+    }
+
+    .footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer ul li {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer h6 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #text-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+    }
+
+    #perfil-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        object-fit: cover;
+        width: 300px;
+    }
 }
 
 @media (min-width:991px) {
@@ -384,5 +427,48 @@ html {
 
     #container-menu {
         display: none;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 200px;
+        color: rgb(81, 81, 81);
+    }
+
+    .footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer ul li {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer h6 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #text-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+    }
+
+    #perfil-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        object-fit: cover;
+        width: 300px;
     }
 }

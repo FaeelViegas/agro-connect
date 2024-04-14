@@ -1,84 +1,424 @@
-#titulo-prestador {
-    margin-top: 50px;
-    margin-bottom: 50px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-#titulo-servicos {
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+html {
+    scroll-behavior: smooth;
 }
 
-.a-text-bold {
-    text-align: center;
+@media(max-width:700px) {
+    .input-container #search-input {
+        width: 350px;
+    }
 }
 
-#sobre {
-    text-align: center;
+@media(max-width:670px) {
+    .input-container #search-input {
+        width: 300px;
+    }
 }
 
-#sobre,
-h2 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+@media(max-width:520px) {
+    .input-container #search-input {
+        width: 250px;
+    }
 }
 
-.card-img-top {
-    object-fit: cover;
-    height: 300px;
+@media(max-width:450px) {
+    .input-container #search-input {
+        width: 190px;
+    }
 }
 
-.card-group{
-    gap: 20px;
+@media(max-width:386px) {
+    .input-container #search-input {
+        width: 120px;
+    }
 }
 
-.card-body{
-    text-align: center;
+@media(max-width:990px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(7, 46, 9);
+        padding: 10px;
+    }
+
+    .category-list {
+        display: none;
+    }
+
+    #menu-button-1,
+    #menu-button-2 {
+        margin: 10px;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    .input-container {
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .input-container input {
+        width: 500px;
+        height: 30px;
+        border: none;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        color: black;
+    }
+
+    .input-container button {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .input-container input:focus {
+        outline: none;
+    }
+
+    .input-container button i {
+        color: rgb(25, 25, 56);
+
+    }
+
+    .logo-container img {
+        object-fit: cover;
+        width: 70px;
+    }
+
+    #titulo-prestador {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #titulo-servicos {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .a-text-bold {
+        text-align: center;
+    }
+
+    #sobre {
+        text-align: center;
+    }
+
+    #sobre,
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .card-group {
+        gap: 20px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    #perfil-card {
+        text-decoration: none;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 200px;
+        color: rgb(81, 81, 81);
+    }
+
+    .footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer ul li {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer h6 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #text-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+    }
+
+    #perfil-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        object-fit: cover;
+        width: 300px;
+    }
+
+    #container-menu {
+        display: block;
+        width: 0;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        background-color: rgb(7, 46, 9);
+        transition: 1s ease;
+        visibility: hidden;
+        overflow-x: hidden;
+        z-index: 10000;
+    }
+
+    #container-menu.active {
+        display: block;
+        width: 200px;
+        height: 100vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #container-nav.active .logo-menu button {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+    }
+
+    #container-menu li {
+        display: flex;
+        min-width: 100%;
+    }
+
+    #container-menu ul li i {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+
+
+    #container-menu ul li a {
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .logo-menu {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-menu img {
+        object-fit: cover;
+        width: 40px;
+    }
+
+    .logo-menu button i {
+        font-size: 25px;
+    }
 }
 
-#perfil-card{
-    text-decoration: none;
-}
+@media (min-width: 991px) {
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(7, 46, 9);
+        padding: 10px;
+    }
 
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(245, 245, 245);
-    height: 200px;
-    color: rgb(245, 245, 245);
-}
+    .category-list {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(131, 119, 58);
+    }
 
-.footer ul{
-    display: flex;
-    list-style: none;
-}
+    .category-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 30px;
+        margin: 0;
+    }
 
-.footer ul li{
-    padding:20px;
-    margin-top: 30px;
-}
+    .category-list ul li {
+        padding: 1rem 5px;
+        transition: .5s ease;
+    }
 
-.footer h6{
-    color: black;
-    font-weight: bold;
-}
+    .category-list ul li:hover {
+        background-color: rgb(7, 46, 9);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
 
-#text-rodape{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(245, 245, 245);
-    height: 50px;
-}
+    .category-list li a {
+        padding: 1rem 5px;
+        height: 100%;
+    }
 
-#perfil-card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+    a:hover {
+        text-decoration: none;
+    }
 
-#logo-footer{
-    object-fit: cover;
-    width: 300px;
+    .input-container {
+        background-color: white;
+        border-radius: 5px;
+        margin: 10px;
+    }
+
+    .input-container input {
+        width: 500px;
+        height: 30px;
+        border: none;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        color: black;
+    }
+
+    .input-container button {
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .input-container input:focus {
+        outline: none;
+    }
+
+    .input-container button i {
+        color: rgb(25, 25, 56);
+
+    }
+
+    .logo-container img {
+        object-fit: cover;
+        width: 70px;
+    }
+
+    .logo-container button {
+        display: none;
+    }
+
+    #container-menu {
+        display: none;
+    }
+
+    #titulo-prestador {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #titulo-servicos {
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .a-text-bold {
+        text-align: center;
+    }
+
+    #sobre {
+        text-align: center;
+    }
+
+    #sobre,
+    h2 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 300px;
+    }
+
+    .card-group {
+        gap: 20px;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+
+    #perfil-card {
+        text-decoration: none;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 200px;
+        color: rgb(81, 81, 81);
+    }
+
+    .footer ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .footer ul li {
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .footer h6 {
+        color: black;
+        font-weight: bold;
+    }
+
+    #text-rodape {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(245, 245, 245);
+        height: 50px;
+    }
+
+    #perfil-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-footer {
+        object-fit: cover;
+        width: 300px;
+    }
 }
