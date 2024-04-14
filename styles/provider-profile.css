@@ -230,6 +230,7 @@ html {
     .footer {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
         background-color: rgb(245, 245, 245);
         height: 200px;
@@ -256,7 +257,7 @@ html {
         align-items: center;
         justify-content: center;
         background-color: rgb(245, 245, 245);
-        height: 50px;
+        height: 200px;
     }
 
     #perfil-card {
@@ -267,7 +268,7 @@ html {
 
     #logo-footer {
         object-fit: cover;
-        width: 300px;
+        width: 130px;
     }
 }
 
@@ -469,6 +470,6 @@ html {
 
     #logo-footer {
         object-fit: cover;
-        width: 300px;
+        width: 130px;
     }
 }

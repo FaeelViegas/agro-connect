@@ -251,6 +251,7 @@ html {
     .footer {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         justify-content: center;
         background-color: rgb(245, 245, 245);
         height: 200px;
@@ -277,7 +278,7 @@ html {
         align-items: center;
         justify-content: center;
         background-color: rgb(245, 245, 245);
-        height: 50px;
+        height: 200px;
     }
 
     #perfil-card {
@@ -288,7 +289,7 @@ html {
 
     #logo-footer {
         object-fit: cover;
-        width: 300px;
+        width: 130px;
     }
 }
 
@@ -482,6 +483,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         background-color: rgb(245, 245, 245);
         height: 200px;
         color: rgb(81, 81, 81);
@@ -507,7 +509,7 @@ html {
         align-items: center;
         justify-content: center;
         background-color: rgb(245, 245, 245);
-        height: 50px;
+        height: 200px;
     }
 
     #perfil-card {
@@ -518,6 +520,6 @@ html {
 
     #logo-footer {
         object-fit: cover;
-        width: 300px;
+        width: 130px;
     }
 }
