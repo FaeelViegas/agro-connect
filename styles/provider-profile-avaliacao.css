@@ -101,73 +101,86 @@ html {
     }
 
     .sec-provider {
-        width: 100%;
+        display: flex;
+        justify-content: center;
         gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 20px;
     }
 
     .container-provider {
         display: flex;
-        gap: 100px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
         margin: 20px;
         box-shadow: 1px 0px 2px 1px rgba(87, 87, 87, 0.744);
         border-radius: 30px;
-    }
-
-    .container-provider .profile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 170px;
-        gap: 10px;
-    }
-
-    .container-provider .profile .btn {
-        margin-bottom: 20px;
+        padding: 20px;
     }
 
     .container-provider .profile img {
         object-fit: cover;
         width: 120px;
+        height: 120px;
         border-radius: 100px;
-        margin: 20px;
         box-shadow: 1px 0px 3px 2px rgba(105, 105, 105, 0.829);
     }
 
     .container-provider .info {
         display: flex;
-        flex-wrap: wrap;
-        gap: 250px;
-        margin-top: 60px;
+        gap: 20px;
     }
 
     .container-provider .info .avaliacoes {
         margin-right: 50px;
-        margin-top: 50px;
     }
+    .navbar nav .contato {
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        border-radius: 20px;
+        height: 40px;
 
-    .navbar nav {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 100%;
-        text-align: center;
     }
+    .navbar nav .sobre {
+        background-color: rgb(255, 255, 255);
+        align-content: center;
+        border-radius: 20px;
+        height: 40px;
 
+    }
     .navbar nav .avaliacoes {
         background-color: rgb(7, 46, 9);
         align-content: center;
         border-radius: 20px;
         height: 40px;
     }
+    .navbar nav {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navbar nav a {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
 
     .avaliacao {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
     }
 
     .container-avaliacao {
-        max-width: 350px;
-        max-height: 220px;
-        overflow-y: auto;
+        width: 300px;
         padding: 15px;
         box-shadow: 1px 0px 3px 2px rgba(105, 105, 105, 0.829);
         border-radius: 10px;
